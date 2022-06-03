@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.LandingPage{
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+    background: rgb(127,58,180);
+    background: linear-gradient(141deg, rgba(127,58,180,1) 0%, rgba(138,29,253,1) 41%, rgba(252,148,69,1) 100%);
+}
+
+.LandingPage svg {
+    position: absolute; 
+    bottom: -10px; 
+    width: 100%;
+    pointer-events: none;
+}
+
+.LandingPageContent{
+    animation: fadeUpAnimation ease 1s;
+}
+
+@keyframes fadeUpAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.LandingPageContent h2 {
+    font-weight: 200;
+}
+.LandingPageContent h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.LandingPageContent a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: white;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+}
+.LandingPageContent .btn-lignt{
+    text-decoration: underline;
+    transition-duration: 200ms;
+}
+.LandingPageContent .btn-lignt:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+.LandingPageContent a:nth-of-type(2){
+
+    border: 0.1rem solid white;
+    transition-duration: 200ms;
+}
+.LandingPageContent a:nth-of-type(2) > span{
+    transition-duration: 300ms;
+}
+.LandingPageContent a:nth-of-type(2):hover{
+    background-color: white;
+    border: 0.1rem solid white;
+}
+.LandingPageContent a:nth-of-type(2):hover > span{
+    background: rgb(127,58,180);
+    background: linear-gradient(141deg, rgba(127,58,180,1) 0%, rgba(138,29,253,1) 41%, rgba(252,148,69,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition-duration: 250ms;
+}

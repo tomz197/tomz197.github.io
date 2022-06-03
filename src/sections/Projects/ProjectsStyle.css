@@ -1,0 +1,26 @@
+.Projects > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: min(100%, 100rem);
+    margin: 0 auto;
+}
+.Projects {
+    margin: 15rem 10%;
+}
+.Projects > h2 {
+    background: rgb(127,58,180);
+    background: linear-gradient(141deg, rgba(127,58,180,1) 0%, rgba(138,29,253,1) 41%, rgba(252,148,69,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+@media only screen and (max-width: 600px) {
+    .Projects {
+        margin: 15rem 0;
+    }
+} 

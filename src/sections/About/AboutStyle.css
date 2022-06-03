@@ -1,0 +1,19 @@
+.about {
+    position: relative;
+    text-align: center;
+    margin: 5rem 0;
+    padding: 10rem 0;
+}
+.about p{
+    max-width: 75ch; 
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+.about h2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    font-size: 15rem;
+    color: rgb(220, 220, 220);
+}

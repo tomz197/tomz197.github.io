@@ -1,0 +1,158 @@
+.header{
+    padding: 1rem 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header.fixedNav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%); 
+    background: linear-gradient(141deg, rgba(127,58,180,1) 0%, rgba(138,29,253,1) 41%, rgba(252,148,69,1) 100%);
+    transition: 500ms ease;
+}
+.header.fixedNav.showNav{
+    transform: translateY(0%);
+}
+.header.fixedNav.hideNav{
+    transform: translateY(-100%);
+}
+
+#name{
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+.nav li{
+    list-style: none;
+}
+.nav a{
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+}
+.nav .navLink a{
+    padding: 0.5rem 1rem;
+    text-decoration: underline;
+    transition-duration: 200ms;
+}
+.nav .navLink a:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+.nav a[target="blank"]{
+    text-decoration: none;
+    border: 0.1rem solid white;
+    transition-duration: 200ms;
+}
+.nav a[target="blank"] > span{
+    transition-duration: 300ms;
+}
+.nav a[target="blank"]:hover{
+    background-color: white;
+    border: 0.1rem solid white;
+}
+.nav a[target="blank"]:hover > span{
+    background: rgb(127,58,180);
+    background: linear-gradient(141deg, rgba(127,58,180,1) 0%, rgba(138,29,253,1) 41%, rgba(252,148,69,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: 200ms ease-in-out;
+}
+
+.burgerButton{
+    cursor: pointer;
+    text-align: right;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    text-align: right;
+    margin-left: auto;
+    background: no-repeat center;
+    background-size: cover;
+}
+.burgerButton.close{
+    width: 5rem;
+    background-image: url(./close-outline.svg);
+    margin-right: 1rem;
+}
+.burgerButton.open{
+    display: none;
+    height: 3rem;
+    background-image: url(./reorder-three-outline.svg);
+}
+@media only screen and (max-width: 768px) {
+    .navLink{
+        display: none;
+    }
+    .burgerButton.open{
+        display: block;
+        height: 3rem;
+        background-image: url(./reorder-three-outline.svg);
+    }
+}
+.collapsable {
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 33%;
+    min-width: fit-content;
+    transform: translateX(100%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: rgb(127,58,180);
+    background: linear-gradient(141deg, rgba(127,58,180,1) 0%, rgba(138,29,253,1) 41%, rgba(252,148,69,1) 100%);
+    transition: 500ms ease;
+
+}
+.collapsableBG {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateX(100%);
+    background: rgba(0,0,0, 0.3);
+    transition: 500ms ease;
+
+}
+.hideSidebar{
+    transform: translateX(100%);
+
+}
+.showSidebar{
+    transform: translateX(0%);
+}
+.collapsable li{
+    list-style: none;
+    padding: 3rem 0;
+}
+.collapsable a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.collapsable ul{
+    display: flex;
+    flex-direction: column;
+    padding: 20% 4rem;
+}

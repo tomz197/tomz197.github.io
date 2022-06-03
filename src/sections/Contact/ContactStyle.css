@@ -1,0 +1,195 @@
+.contact {
+  position: relative;
+  background: rgb(127, 58, 180);
+  background: linear-gradient(
+    141deg,
+    rgba(127, 58, 180, 1) 0%,
+    rgba(138, 29, 253, 1) 41%,
+    rgba(252, 148, 69, 1) 100%
+  );
+  margin: 5rem 0;
+  padding: 3rem 5% 5rem 5%;
+}
+.contact h2 {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.contact form {
+  position: relative;
+  max-width: 75ch;
+  margin: 0 auto;
+}
+.contact label {
+  display: block;
+  color: white;
+}
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border: none;
+  background-color: rgb(200, 200, 200);
+}
+.contact input,
+.contact textarea {
+  border: none;
+  display: block;
+  width: calc(100% - 1rem);
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+.contact .incorrectMail input {
+  background-color: rgb(255, 125, 125);
+}
+.contact button {
+  background: none;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid white;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+.contact button > span {
+  transition-duration: 300ms;
+}
+.contact button:hover,
+.contact button:focus {
+  background-color: white;
+  border: 0.1rem solid white;
+  transition-duration: 200ms;
+}
+.contact button:hover > span,
+.contact button:focus > span {
+  outline: none;
+  background: rgb(127, 58, 180);
+  background: linear-gradient(
+    141deg,
+    rgba(127, 58, 180, 1) 0%,
+    rgba(138, 29, 253, 1) 41%,
+    rgba(252, 148, 69, 1) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition-duration: 300ms;
+}
+
+.contact .submited{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.contact .hidden {
+    display: none;
+}
+.contact .hide {
+    -webkit-animation: disappear 0.5s ease-in-out forwards;
+    animation: disappear 0.5s ease-in-out forwards;
+    display: none;
+}
+.contact .hide-form {
+    -webkit-animation: disappear 0.5s ease-in-out forwards;
+    animation: disappear 0.5s ease-in-out forwards;
+}
+@keyframes disappear {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+.contact .show-form {
+    -webkit-animation: appear 0.5s ease-in-out forwards;
+    animation: appear 0.5s ease-in-out forwards;
+}
+@keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.contact .show {
+    opacity: 1;
+    display: block;
+}
+
+.contact svg {
+    width: 100px;
+    display: block;
+    margin: 40px auto 0;
+  }
+  .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+  }
+  .path.circle {
+    -webkit-animation: dash 0.9s ease-in-out;
+    animation: dash 0.9s ease-in-out;
+  }
+  .path.line {
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash 0.9s 0.35s ease-in-out forwards;
+    animation: dash 0.9s 0.35s ease-in-out forwards;
+  }
+  .path.check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check 0.9s 0.35s ease-in-out forwards;
+    animation: dash-check 0.9s 0.35s ease-in-out forwards;
+  }
+  .contact  p {
+    text-align: center;
+    margin: 20px 0 60px;
+    font-size: 1.25em;
+    -webkit-animation: appear 0.2s ease-in-out forwards;
+    animation: appear 0.2s ease-in-out forwards;
+  }
+  .contact  p.success {
+    color: white;
+  }
+  .contact  p.error {
+    color: #d06079;
+  }
+  @-webkit-keyframes dash {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  @-webkit-keyframes dash-check {
+    0% {
+      stroke-dashoffset: -100;
+    }
+    100% {
+      stroke-dashoffset: 900;
+    }
+  }
+  @keyframes dash-check {
+    0% {
+      stroke-dashoffset: -100;
+    }
+    100% {
+      stroke-dashoffset: 900;
+    }
+  }

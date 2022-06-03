@@ -1,0 +1,32 @@
+.Skills{
+    margin: 15rem 0;
+}
+.Skills > div {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+}
+.Skills ul{
+    display: flex;
+    flex-direction: column;
+}
+.Skills li{
+    list-style-type: none;
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.Skills .left{
+    text-align: right;
+}
+.Skills > h2 {
+    background: rgb(127,58,180);
+    background: linear-gradient(141deg, rgba(127,58,180,1) 0%, rgba(138,29,253,1) 41%, rgba(252,148,69,1) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
