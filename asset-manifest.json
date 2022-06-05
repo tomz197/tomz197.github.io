@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.568c9517.css",
-    "main.js": "/static/js/main.68137502.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/CV.pdf": "/static/media/CV.6f7c8b4f74e2b315e181.pdf",
-    "static/media/Chess-project.PNG": "/static/media/Chess-project.0a7e68fc94d1bd248610.PNG",
-    "static/media/Writing-project.jpg": "/static/media/Writing-project.c5aa481cfa32d9a92ef9.jpg",
-    "static/media/Simulation-project.jpg": "/static/media/Simulation-project.8a3b0f6259831e6ffca4.jpg",
-    "static/media/Paint-project.PNG": "/static/media/Paint-project.14270c936c7ac9238778.PNG",
-    "index.html": "/index.html",
-    "static/media/reorder-three-outline.svg": "/static/media/reorder-three-outline.8659e062b68afb98e600.svg",
-    "static/media/close-outline.svg": "/static/media/close-outline.c6b070ad2a2ef50dcb15.svg",
-    "main.568c9517.css.map": "/static/css/main.568c9517.css.map",
-    "main.68137502.js.map": "/static/js/main.68137502.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/tomz197/portfolio/static/css/main.addb1e64.css",
+    "main.js": "/tomz197/portfolio/static/js/main.c608a143.js",
+    "static/js/787.1ed0c42c.chunk.js": "/tomz197/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/CV.pdf": "/tomz197/portfolio/static/media/CV.6f7c8b4f74e2b315e181.pdf",
+    "static/media/Chess-project.PNG": "/tomz197/portfolio/static/media/Chess-project.0a7e68fc94d1bd248610.PNG",
+    "static/media/Writing-project.jpg": "/tomz197/portfolio/static/media/Writing-project.c5aa481cfa32d9a92ef9.jpg",
+    "static/media/Simulation-project.jpg": "/tomz197/portfolio/static/media/Simulation-project.8a3b0f6259831e6ffca4.jpg",
+    "static/media/Paint-project.PNG": "/tomz197/portfolio/static/media/Paint-project.14270c936c7ac9238778.PNG",
+    "index.html": "/tomz197/portfolio/index.html",
+    "static/media/reorder-three-outline.svg": "/tomz197/portfolio/static/media/reorder-three-outline.8659e062b68afb98e600.svg",
+    "static/media/close-outline.svg": "/tomz197/portfolio/static/media/close-outline.c6b070ad2a2ef50dcb15.svg",
+    "main.addb1e64.css.map": "/tomz197/portfolio/static/css/main.addb1e64.css.map",
+    "main.c608a143.js.map": "/tomz197/portfolio/static/js/main.c608a143.js.map",
+    "787.1ed0c42c.chunk.js.map": "/tomz197/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.568c9517.css",
-    "static/js/main.68137502.js"
+    "static/css/main.addb1e64.css",
+    "static/js/main.c608a143.js"
   ]
 }
