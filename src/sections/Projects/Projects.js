@@ -19,10 +19,10 @@ function Projects() {
                     technologies={['HTML', 'CSS', 'JS']}
                     text="Classical chess where you can play classical game of chess with all rules.">
                 </Card>
-                <Card name="Paint" index="2"
-                    link="https://github.com/tomz197/Paint"
-                    technologies={['Python']}
-                    text="Paint application where you can paint.">
+                <Card name="QuizApp" index="2"
+                    link="https://github.com/tomz197/quizApp"
+                    technologies={['ReactJS', 'JavaScript', 'HTML', 'CSS']}
+                    text="Simple quiz app where you can play or make quizzes.">
                 </Card>
                 <Card name="Simulation" index="3"
                     link="https://github.com/tomz197/pixel-simulation"
