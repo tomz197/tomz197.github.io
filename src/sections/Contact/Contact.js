@@ -21,36 +21,42 @@ function Contact() {
 
     const handleSubmit = async (event) => {
         const regex =
-            /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         event.preventDefault();
         if (!regex.test(mail)) {
             console.log("wrong mail");
             setMailClass('incorrectMail');
             return;
         }
-        fetch('http://localhost:8080/message', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': '*'
-            },
-            body: JSON.stringify({ e_mail: mail, message: message }),
-        })
-            .then(response => response.json())
-            .then(data => {
-                if (data.error)
-                    return;
-                console.log('Success:', data);
-                setFormClass('hide-form')
-                setTimeout(() => { setCorrect('show'); event.target.reset(); }, 500);
-                setTimeout(() => { setCorrect('hide-form') }, 3000);
-                setTimeout(() => { setFormClass('show-form') }, 3500);
-                setTimeout(() => { setCorrect('hide') }, 3500);
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-                return;
-            });
+        setFormClass('hide-form')
+        setTimeout(() => { setCorrect('show'); event.target.reset(); }, 500);
+        setTimeout(() => { setCorrect('hide-form') }, 3000);
+        setTimeout(() => { setFormClass('show-form') }, 3500);
+        setTimeout(() => { setCorrect('hide') }, 3500);
+        console.log(message);
+        
+        // fetch('http://localhost:8080/message', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //         'Access-Control-Allow-Origin': '*'
+        //     },
+        //     body: JSON.stringify({ e_mail: mail, message: message }),
+        // })
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         if (data.error)
+        //             return;
+        //         setFormClass('hide-form')
+        //         setTimeout(() => { setCorrect('show'); event.target.reset(); }, 500);
+        //         setTimeout(() => { setCorrect('hide-form') }, 3000);
+        //         setTimeout(() => { setFormClass('show-form') }, 3500);
+        //         setTimeout(() => { setCorrect('hide') }, 3500);
+        //     })
+        //     .catch((error) => {
+        //         console.error('Error:', error);
+        //         return;
+        //     });
     }
     useEffect(() => {
         AOS.init({ duration: 500, easing: 'ease' });

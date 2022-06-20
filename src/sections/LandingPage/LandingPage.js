@@ -17,7 +17,7 @@ function LandingPage() {
                 <h1>Frontend developer</h1>
                 <div>
                     <a className="btn-lignt" href="#Projects">Projects</a>
-                    <a href="CONTACT"><span>CONTACT</span></a>
+                    <a href="#Contact"><span>CONTACT</span></a>
                 </div>
             </div >
             <svg

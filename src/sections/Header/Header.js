@@ -28,7 +28,7 @@ function Header() {
     return (
         <div id="Header">
             <div className="header">
-                <div className="nav"><h2><a href="#LandingPage" id="name">Žifčák</a></h2></div>
+                <div className="nav"><h2><a href="#Header" id="name">Žifčák</a></h2></div>
                 <div className="nav">
                     <ul>
                         <li className="navLink"><a href="#About">About</a></li>
@@ -41,7 +41,7 @@ function Header() {
                 <div className={"collapsableBG " + sidebarClass}></div>
             </div>
             <div className={"header fixedNav " + navbarClass}>
-                <div className="nav"><h2><a href="#LandingPage" id="name">Žifčák</a></h2></div>
+                <div className="nav"><h2><a href="#Header" id="name">Žifčák</a></h2></div>
                 <div className="nav">
                     <ul>
                         <li className="navLink"><a href="#About">About</a></li>

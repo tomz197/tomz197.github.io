@@ -11,8 +11,8 @@ function Footer() {
                 </div>
                 <div className="social">
                     <ul>
-                        <li><a href="https://github.com/tomz197">Github</a></li>
-                        <li><a href="https://www.instagram.com/tom_z__/">Instagram</a></li>
+                        <li><a href="https://github.com/tomz197" target="_blank" rel="noreferrer">Github</a></li>
+                        <li><a href="https://www.instagram.com/tom_z__/" target="_blank" rel="noreferrer">Instagram</a></li>
                     </ul>
                 </div>
             </div>

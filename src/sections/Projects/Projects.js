@@ -20,7 +20,7 @@ function Projects() {
                     text="Classical chess where you can play classical game of chess with all rules.">
                 </Card>
                 <Card name="QuizApp" index="2"
-                    link="https://github.com/tomz197/quizApp"
+                    link="https://tomz197.github.io/quizApp"
                     technologies={['ReactJS', 'JavaScript', 'HTML', 'CSS']}
                     text="Simple quiz app where you can play or make quizzes.">
                 </Card>
