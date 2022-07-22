@@ -14,7 +14,7 @@ function LandingPage() {
         <div className="LandingPage" id="LandingPage">
             <div className="LandingPageContent" style={{ transform: `translateY(${offsetY * 0.25}px)` }}>
                 <h2>Tomáš Žifčák</h2>
-                <h1>Frontend developer</h1>
+                <h1><333</h1>
                 <div>
                     <a className="btn-lignt" href="#Projects">Projects</a>
                     <a href="#Contact"><span>CONTACT</span></a>
