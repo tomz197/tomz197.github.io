@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3cd86258.css",
-    "main.js": "/static/js/main.f31590de.js",
+    "main.js": "/static/js/main.ca10b864.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/CV.pdf": "/static/media/CV.6f7c8b4f74e2b315e181.pdf",
     "static/media/Chess-project.PNG": "/static/media/Chess-project.0a7e68fc94d1bd248610.PNG",
@@ -12,11 +12,11 @@
     "static/media/reorder-three-outline.svg": "/static/media/reorder-three-outline.8659e062b68afb98e600.svg",
     "static/media/close-outline.svg": "/static/media/close-outline.c6b070ad2a2ef50dcb15.svg",
     "main.3cd86258.css.map": "/static/css/main.3cd86258.css.map",
-    "main.f31590de.js.map": "/static/js/main.f31590de.js.map",
+    "main.ca10b864.js.map": "/static/js/main.ca10b864.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3cd86258.css",
-    "static/js/main.f31590de.js"
+    "static/js/main.ca10b864.js"
   ]
 }
